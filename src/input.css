@@ -131,3 +131,7 @@ p {
   -moz-box-shadow: 0px 0px 0px 10px white;
   border: 8px solid #f4d9d0;
 }
+
+.h-50vh {
+  height: 50vh;
+}

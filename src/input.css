@@ -99,6 +99,7 @@ p {
 @media (max-width: 1024px) {
   .moca-w-hero {
     max-width: 800px;
+    object-fit: cover;
     z-index: 2;
   }
 
@@ -116,7 +117,7 @@ p {
     z-index: 10;
     right: 10px;
     left: 10px;
-    top: 10px;
+    top: 50%;
   }
 }
 

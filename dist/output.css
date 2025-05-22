@@ -616,6 +616,10 @@ video {
   top: 2.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -867,7 +871,7 @@ p {
     z-index: 10;
     right: 10px;
     left: 10px;
-    bottom: 10px;
+    top: 10px;
   }
 }
 

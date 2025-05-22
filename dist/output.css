@@ -662,16 +662,16 @@ video {
   max-width: 8rem;
 }
 
+.max-w-40 {
+  max-width: 10rem;
+}
+
 .max-w-48 {
   max-width: 12rem;
 }
 
-.max-w-60 {
-  max-width: 15rem;
-}
-
-.max-w-40 {
-  max-width: 10rem;
+.max-w-28 {
+  max-width: 7rem;
 }
 
 .-translate-x-1\/2 {
@@ -869,7 +869,7 @@ p {
 
   .content-hero {
     border-radius: 20px;
-    border: 1px solid var(--Gradient-White, rgba(255, 255, 255, 0.5));
+    border: 1px solid #ddd;
     background: var(
       --Gradient-White,
       linear-gradient(
@@ -928,10 +928,6 @@ p {
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:max-w-80 {
-    max-width: 20rem;
-  }
-
   .max-md\:\!max-w-80 {
     max-width: 20rem !important;
   }

@@ -105,7 +105,7 @@ p {
 
   .content-hero {
     border-radius: 20px;
-    border: 1px solid var(--Gradient-White, rgba(255, 255, 255, 0.5));
+    border: 1px solid #ddd;
     background: var(
       --Gradient-White,
       linear-gradient(

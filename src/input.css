@@ -141,3 +141,40 @@ p {
   border: 1px solid #c16c3f;
   color: #c16c3f;
 }
+
+.card-packages {
+  background: linear-gradient(
+      90deg,
+      #b66243 0.01%,
+      #cd9073 140.2%,
+      #d7a78d 225.13%,
+      #deb69e 299.34%,
+      #e0bba4 348.82%,
+      #dfb8a2 370.26%,
+      #c79483 568.98%,
+      #ba7f71 692.67%
+    ),
+    #3b4249;
+}
+
+.card-list-item {
+  color: #000;
+
+  leading-trim: both;
+
+  text-edge: cap;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-list-item span span {
+  font-weight: 700;
+  color: #E17B4A;
+}

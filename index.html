@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <main class="snap-y snap-mandatory h-screen overflow-y-scroll">
@@ -58,7 +62,7 @@
         </div>
       </header>
 
-      <section class="hero max-md:pb-20 snap-center min-h-screen">
+      <section class="hero max-md:pb-20 snap-start min-h-screen">
         <div
           class="container container-hero h-full flex items-center justify-between relative"
         >
@@ -158,7 +162,7 @@
         </div>
       </section>
 
-      <section class="snap-center min-h-screen">
+      <section class="snap-start min-h-screen">
         <div
           class="container min-h-screen !py-12 md:!py-20 grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12"
         >
@@ -272,7 +276,7 @@
       </section>
 
       <section
-        class="snap-center min-h-screen bg-[#151515] text-white flex flex-col justify-center max-w-[1640px] mx-auto"
+        class="snap-start min-h-screen bg-[#151515] text-white flex flex-col justify-center max-w-[1640px] mx-auto"
       >
         <div
           class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-screen p-0"
@@ -363,9 +367,438 @@
               alt="Mulher preocupada com a pele e cabelo"
               class="absolute inset-0 w-full h-full object-cover rounded-none lg:rounded-none"
             />
+            <!-- <video
+              src="./public/woman-hair.mp4"
+              autoplay
+              muted
+              loop
+              class="absolute inset-0 w-full h-full object-cover rounded-none lg:rounded-none"
+            ></video> -->
           </div>
         </div>
       </section>
+
+      <section
+        class="snap-start min-h-screen bg-[#151515] text-white flex flex-col justify-center max-w-[1640px] mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-screen p-0"
+        >
+          <div
+            class="flex flex-col gap-6 max-lg:order-2 justify-center px-6 py-12 lg:px-16 lg:py-0 bg-[#151515] h-full lg:min-h-screen"
+          >
+            <h2 class="font-bold text-5xl max-lg:text-2xl">
+              Formula que destrava
+            </h2>
+            <p class="text-base md:text-lg text-[#F2F2F2]">
+              O HSN Complex™ nutre cabelo, pele e unhas ao mesmo tempo com
+              ativos biodisponíveis, inspirados na ciência estética coreana.
+            </p>
+            <p class="text-base md:text-lg text-[#F2F2F2]">
+              Nossa tecnologia exclusiva permite a absorção completa dos
+              nutrientes essenciais.
+            </p>
+            <ul class="flex flex-col gap-3">
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >Baseado em um ritual milenar</span
+                >
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >Ingredientes que destravam os genes de regeneração
+                  estética</span
+                >
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >Transformando a sua beleza agindo de dentro para fora
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative max-lg:order-1 h-50vh lg:h-auto lg:min-h-screen w-full"
+          >
+            <!-- <video
+              src="./public/woman-hair.mp4"
+              autoplay
+              muted
+              loop
+              class="absolute inset-0 w-full h-full object-cover rounded-none lg:rounded-none"
+            ></video> -->
+            <img
+              src="./public/tratamento-resolve.png"
+              alt="Mulher preocupada com a pele e cabelo"
+              class="absolute inset-0 w-full h-full object-cover rounded-none lg:rounded-none"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="snap-start min-h-screen bg-[#151515] text-white flex flex-col justify-center max-w-[1640px] mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-screen p-0"
+        >
+          <div
+            class="flex flex-col gap-6 max-lg:order-2 justify-center px-6 py-12 lg:px-16 lg:py-0 bg-[#151515] h-full lg:min-h-screen"
+          >
+            <h2 class="font-bold text-5xl max-lg:text-2xl">
+              Resultados visíveis
+            </h2>
+            <p class="text-base md:text-lg text-[#F2F2F2]">
+              Fios mais resistentes, pele hidratada e unhas fortes em poucos
+              dias. Sua beleza, reativada naturalmente com a potência do HSN
+              Complex™.
+            </p>
+            <ul class="flex flex-col gap-3">
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >+7 mil mulheres destravam sua beleza com o PandaGlow</span
+                >
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >Hidrata o couro cabeludo profundamente</span
+                >
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >Fortalece a raiz do cabelo</span
+                >
+              </li>
+
+              <li class="flex items-center gap-2">
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                      fill="#DCFCE7"
+                    />
+                    <path d="M8 11L10 13L14 9" fill="#DCFCE7" />
+                    <path
+                      d="M8 11L10 13L14 9M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                      stroke="#16A34A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base text-[#F2F2F2]"
+                  >Reduz a queda capilar</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative max-lg:order-1 h-50vh lg:h-auto lg:min-h-screen w-full"
+          >
+            <!-- <video
+            src="./public/woman-hair.mp4"
+            autoplay
+            muted
+            loop
+            class="absolute inset-0 w-full h-full object-cover rounded-none lg:rounded-none"
+          ></video> -->
+            <img
+              src="./public/resultados-visiveis.png"
+              alt="Mulher preocupada com a pele e cabelo"
+              class="absolute inset-0 w-full h-full object-cover rounded-none lg:rounded-none"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="relative snap-center h-screen">
+        <div
+          class="container h-screen !py-12 flex flex-col gap-6 md:gap-8 items-center justify-center"
+        >
+          <h2
+            class="text-3xl md:text-5xl text-center max-w-[745px] leading-140"
+          >
+            Chegou a hora de destravar sua beleza com o HSN Complex™
+          </h2>
+
+          <div
+            class="flex gap-4 items-center justify-center max-md:flex-col max-md:w-full"
+          >
+            <a class="button block text-center max-md:!w-full" href="#"
+              >GARANTIR OFERTA</a
+            >
+            <a
+              class="button block text-center max-md:!w-full outline-button"
+              href="#"
+              >VER TABELA NUTRICIONAL</a
+            >
+          </div>
+
+          <p class="text-center text-md md:text-2xl !text-[#4B5563]">
+            Você vai se surpreender com a verdade
+          </p>
+
+          <div class="absolute bottom-9 left-1/2 -translate-x-1/2">
+            <svg
+              width="26"
+              height="30"
+              viewBox="0 0 26 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.75 1.5L13 12.75L24.25 1.5M1.75 17.25L13 28.5L24.25 17.25"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="snap-start h-screen flex flex-col items-center justify-center bg-white py-20"
+      >
+        <div class="container flex flex-col items-center justify-center py-12">
+          <h2 class="text-2xl md:text-4xl text-center leading-140 mb-10">
+            Mulheres que reativaram sua beleza
+          </h2>
+          <!-- Swiper -->
+          <div class="w-full max-w-5xl">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide flex flex-col items-center px-2">
+                  <img
+                    src="./public/img-container.png"
+                    alt="Depoimento 1"
+                    class="rounded-xl shadow-lg w-full max-w-xs mb-4"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide flex flex-col items-center px-2">
+                  <img
+                    src="./public/img-container.png"
+                    alt="Depoimento 2"
+                    class="rounded-xl shadow-lg w-full max-w-xs mb-4"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide flex flex-col items-center px-2">
+                  <img
+                    src="./public/img-container.png"
+                    alt="Depoimento 3"
+                    class="rounded-xl shadow-lg w-full max-w-xs mb-4"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide flex flex-col items-center px-2">
+                  <img
+                    src="./public/img-container.png"
+                    alt="Depoimento 4"
+                    class="rounded-xl shadow-lg w-full max-w-xs mb-4"
+                  />
+                </div>
+
+                <div class="swiper-slide flex flex-col items-center px-2">
+                  <img
+                    src="./public/img-container.png"
+                    alt="Depoimento 4"
+                    class="rounded-xl shadow-lg w-full max-w-xs mb-4"
+                  />
+                </div>
+              </div>
+              <!-- Removido botões e paginação -->
+            </div>
+          </div>
+          <a
+            href="#"
+            class="button outline-button mt-6 md:mt-10"
+          >
+            Ver mais testemunhos
+          </a>
+        </div>
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper", {
+        loop: false,
+        navigation: false,
+        pagination: false,
+        slidesPerView: 1.5,
+        spaceBetween: 8, // Espaço menor no mobile
+        centeredSlides: false,
+        grabCursor: true,
+        allowTouchMove: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

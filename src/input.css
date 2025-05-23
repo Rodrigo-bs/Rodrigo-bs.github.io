@@ -135,3 +135,9 @@ p {
 .h-50vh {
   height: 50vh;
 }
+
+.outline-button {
+  background: #fff;
+  border: 1px solid #c16c3f;
+  color: #c16c3f;
+}

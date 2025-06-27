@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -817,6 +817,10 @@ video {
   max-width: 350px;
 }
 
+.max-w-\[488px\]{
+  max-width: 488px;
+}
+
 .max-w-\[855px\]{
   max-width: 855px;
 }
@@ -1354,7 +1358,18 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-h1, h2, h3, h4 {
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: "Fahkwang", sans-serif !important;
 }
 
@@ -1437,6 +1452,14 @@ label {
   .button {
     padding: 16px 24px;
   }
+}
+
+.beneficios-item-ativo {
+  border-color: #c46e41;
+  box-shadow: 0px 4px 25px 0px rgba(218, 123, 74, 0.5),
+    0px 43px 12px 0px rgba(0, 0, 0, 0), 0px 28px 11px 0px rgba(0, 0, 0, 0.01),
+    0px 16px 9px 0px rgba(0, 0, 0, 0.03), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.05);
 }
 
 .button-item-hero {
@@ -1624,8 +1647,16 @@ label {
     height: 24rem;
   }
 
+  .max-lg\:h-56{
+    height: 14rem;
+  }
+
   .max-lg\:w-full{
     width: 100%;
+  }
+
+  .max-lg\:max-w-\[488px\]{
+    max-width: 488px;
   }
 
   .max-lg\:-translate-y-1\/2{
@@ -1775,6 +1806,11 @@ label {
     padding-bottom: 5rem;
   }
 
+  .md\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1858,6 +1894,10 @@ label {
 
   .lg\:max-w-xl{
     max-width: 36rem;
+  }
+
+  .lg\:max-w-\[488px\]{
+    max-width: 488px;
   }
 
   .lg\:grid-cols-2{

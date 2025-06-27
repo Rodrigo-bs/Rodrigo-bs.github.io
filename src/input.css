@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Fahkwang", sans-serif !important;
 }
 
@@ -86,6 +89,14 @@ label {
   .button {
     padding: 16px 24px;
   }
+}
+
+.beneficios-item-ativo {
+  border-color: #c46e41;
+  box-shadow: 0px 4px 25px 0px rgba(218, 123, 74, 0.5),
+    0px 43px 12px 0px rgba(0, 0, 0, 0), 0px 28px 11px 0px rgba(0, 0, 0, 0.01),
+    0px 16px 9px 0px rgba(0, 0, 0, 0.03), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.05);
 }
 
 .button-item-hero {

@@ -9,6 +9,37 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      /* Estilos para a transição dos benefícios */
+      #beneficios-list li {
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      #beneficios-list li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .beneficios-item-ativo {
+        border-color: #DA7B4A !important;
+        background: linear-gradient(135deg, #fff 0%, #FFF7F2 100%) !important;
+        box-shadow: 0 4px 20px rgba(218, 123, 74, 0.15) !important;
+      }
+
+      /* Transição suave para o vídeo */
+      #beneficios-video {
+        transition: opacity 0.4s ease;
+      }
+      
+      .video-fade-out {
+        opacity: 0 !important;
+      }
+      
+      .video-fade-in {
+        opacity: 1 !important;
+      }
+    </style>
   </head>
   <body>
     <!-- <main class="snap-y snap-mandatory h-screen overflow-y-scroll"> -->
@@ -166,11 +197,15 @@
       <section class="snap-start min-h-screen">
         <div class="container !pt-12 md:!pt-20">
           <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12">
-            <img
-              class="h-full max-lg:h-96 max-lg:w-full object-cover rounded-2xl"
-              src="./public/crescimento-visual.png"
+            <video
+              id="beneficios-video"
+              class="h-full max-lg:h-96 lg:max-w-[488px] max-lg:w-full object-cover rounded-2xl"
+              src="./public/beneficios/woman-hair.mp4"
+              autoplay
+              muted
+              loop
               alt="cabelo"
-            />
+            ></video>
 
             <div class="flex flex-col gap-6">
               <h2
@@ -179,9 +214,10 @@
                 Ative a beleza que existe em você com o PandaGlow
               </h2>
 
-              <ul class="flex flex-col gap-4">
+              <ul id="beneficios-list" class="flex flex-col gap-4">
                 <li
-                  class="py-3 px-8 bg-white rounded-2xl border border-[#ddd] border-solid"
+                  data-video="woman.mp4"
+                  class="py-3 px-8 bg-white rounded-2xl border border-solid beneficios-item-ativo"
                 >
                   <h3
                     class="max-lg:text-lg text-xl text-[#2A1309] font-medium mb-2"
@@ -194,6 +230,7 @@
                 </li>
 
                 <li
+                  data-video="woman-hair.mp4"
                   class="p-3 px-8 bg-white rounded-2xl border border-[#ddd] border-solid"
                 >
                   <h3
@@ -207,6 +244,7 @@
                 </li>
 
                 <li
+                  data-video="woman-nails.mp4"
                   class="p-3 px-8 bg-white rounded-2xl border border-[#ddd] border-solid"
                 >
                   <h3
@@ -220,6 +258,7 @@
                 </li>
 
                 <li
+                  data-video="woman-skin.mp4"
                   class="p-3 px-8 bg-white rounded-2xl border border-[#ddd] border-solid"
                 >
                   <h3
@@ -346,7 +385,7 @@
               <h3 class="text-2xl font-bold text-[#3C1B0C]">Fortalecimento</h3>
 
               <p class="text-[#525252] text-center">
-                Maior densidade e resistência  desde a raiz
+                Maior densidade e resistência desde a raiz
               </p>
             </li>
           </ul>
@@ -766,7 +805,7 @@
             class="relative max-lg:order-1 h-50vh lg:h-auto lg:min-h-screen w-full"
           >
             <!-- <video
-            src="./public/woman-hair.mp4"
+            src="./public/resultados-finais.mp4"
             autoplay
             muted
             loop
@@ -3252,59 +3291,77 @@
           <div class="flex flex-col gap-4">
             <details class="bg-[#F7F7F7] rounded-2xl p-6" open>
               <summary class="font-semibold text-lg cursor-pointer">
-                O que é o PandaGlow?
+                Qual a dosagem recomendada?
               </summary>
               <p class="mt-2 text-base text-[#383838]">
-                PandaGlow é um suplemento em cápsulas criado com ingredientes
-                naturais inspirados em um antigo ritual coreano que ajuda a
-                fortalecer o cabelo, reduzir a queda e devolver o brilho natural
-                dos fios.
+                Recomendamos uma cápsula por dia, preferencialmente com uma refeição
               </p>
             </details>
             <details class="bg-[#F7F7F7] rounded-2xl p-6">
               <summary class="font-semibold text-lg cursor-pointer">
-                Como o PandaGlow funciona?
+                O suplemento é seguro?
               </summary>
               <p class="mt-2 text-base text-[#383838]">
-                Sua fórmula exclusiva age de dentro para fora, nutrindo os
-                folículos capilares, estimulando o crescimento e fortalecendo os
-                fios.
+                Sim, nosso suplemento é produzido com padrões de qualidade rigorosos e é seguro quando consumido conforme as instruções.
               </p>
             </details>
             <details class="bg-[#F7F7F7] rounded-2xl p-6">
               <summary class="font-semibold text-lg cursor-pointer">
-                Quantas cápsulas devo tomar por dia?
+                Posso tomar se for vegetariano?
               </summary>
               <p class="mt-2 text-base text-[#383838]">
-                Recomendamos tomar 2 cápsulas ao dia, preferencialmente junto
-                das principais refeições.
+                Sim, nosso produto é adequado para vegetarianos.
               </p>
             </details>
             <details class="bg-[#F7F7F7] rounded-2xl p-6">
               <summary class="font-semibold text-lg cursor-pointer">
-                O PandaGlow engorda?
+                Por que comprar o PandagGlow?
               </summary>
               <p class="mt-2 text-base text-[#383838]">
-                Não, PandaGlow não contém calorias significativas e não causa
-                ganho de peso.
+                Comprar o PandaGlow é um gesto de amor-próprio e transformação. Com uma fórmula exclusiva inspirada nos segredos de beleza das coreanas e no revolucionário Código Panda, este suplemento reúne ingredientes selecionados para fortalecer seus cabelos, dar mais brilho à sua pele e deixar suas unhas visivelmente mais saudáveis. Testado e aprovado por milhares de mulheres, o PandaGlow oferece resultados reais, com a confiança de uma garantia de 60 dias para você experimentar sem riscos. Além disso, é um produto seguro, com certificações rigorosas e entrega rápida e discreta — porque você merece praticidade e qualidade. PandaGlow é mais do que um suplemento. É o começo de uma nova versão sua.
               </p>
             </details>
             <details class="bg-[#F7F7F7] rounded-2xl p-6">
               <summary class="font-semibold text-lg cursor-pointer">
-                Tem contraindicação?
+                Como funciona a entrega do produto?
               </summary>
               <p class="mt-2 text-base text-[#383838]">
-                Gestantes, lactantes e pessoas com condições pré-existentes
-                devem consultar um profissional de saúde antes de iniciar o uso.
+                O produto será entregue em sua casa com segurança e rapidez. Trabalhamos com as melhores transportadoras do Brasil. Após a compra, você receberá um código de rastreamento para acompanhar a entrega do seu pedido. Nossa equipe de atendimento ao cliente está disponível para auxiliá-lo em caso de dúvidas ou problemas com a entrega.
               </p>
             </details>
             <details class="bg-[#F7F7F7] rounded-2xl p-6">
               <summary class="font-semibold text-lg cursor-pointer">
-                E se eu não gostar?
+                É aprovado pela Anvisa?
               </summary>
               <p class="mt-2 text-base text-[#383838]">
-                Você tem 90 dias para testar. Se não notar resultados visíveis,
-                devolvemos 100% do seu dinheiro.
+                Aprovado pela Anvisa nos termos da RDC 240 de 26/07/2018, sendo dispensado de registro, pois é avaliado como 100% seguro para o consumo da população.
+              </p>
+            </details>
+
+            <details class="bg-[#F7F7F7] rounded-2xl p-6">
+              <summary class="font-semibold text-lg cursor-pointer">
+                Tem contra indicação?
+              </summary>
+              <p class="mt-2 text-base text-[#383838]">
+                Nossa fórmula exclusiva foi especialmente desenvolvida para pessoas com 19 anos ou mais.
+              </p>
+            </details>
+
+            <details class="bg-[#F7F7F7] rounded-2xl p-6">
+              <summary class="font-semibold text-lg cursor-pointer">
+                Quanto tempo tenho resultados?
+              </summary>
+              <p class="mt-2 text-base text-[#383838]">
+                A maioria das mulheres começa a notar os primeiros sinais de melhora entre 3 a 6 semanas de uso contínuo — como cabelos com menos queda, pele mais iluminada e unhas mais fortes. Mas os resultados mais visíveis e duradouros geralmente aparecem após 2 a 3 meses, pois o PandaGlow atua de dentro para fora, respeitando o ciclo natural do seu corpo.
+              </p>
+            </details>
+
+            <details class="bg-[#F7F7F7] rounded-2xl p-6">
+              <summary class="font-semibold text-lg cursor-pointer">
+                E e não funcionar para mim
+              </summary>
+              <p class="mt-2 text-base text-[#383838]">
+                Nós confiamos tanto na eficácia do PandaGlow que oferecemos uma garantia de 90 dias. Se após usar corretamente você não notar nenhuma melhora, devolvemos 100% do seu dinheiro. Simples assim. Você tem todo esse tempo para testar sem riscos, porque o mais importante é que você se sinta segura e satisfeita com sua escolha.
               </p>
             </details>
           </div>
@@ -4362,7 +4419,7 @@
                   </svg>
                   
               </h2>
-              <p class="text-base text-[#525252]">"Meu marido até comentou como meu cabelo tá diferente… Já tô na terceira capsula e me sentindo linda!"</p>
+              <p class="text-base text-[#525252]">"Meu marido até comentou como meu cabelo tá diferente… Já tô no terceiro pote e me sentindo linda!"</p>
               <p class="text-base text-[#646464] mt-2"><b>Débora Tavares</b> 29 anos </p>
             </div>
 
@@ -4531,6 +4588,119 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      // Funcionalidade de rotação automática dos benefícios
+      document.addEventListener('DOMContentLoaded', function() {
+        const beneficiosList = document.getElementById('beneficios-list');
+        const video = document.getElementById('beneficios-video');
+        const beneficiosItems = beneficiosList.querySelectorAll('li');
+        let currentIndex = 0;
+        let rotationInterval;
+        
+        // Precarrega todos os vídeos para transições mais suaves
+        function preloadVideos() {
+          beneficiosItems.forEach(item => {
+            const videoSrc = item.getAttribute('data-video');
+            if (videoSrc) {
+              const preloadVideo = document.createElement('video');
+              preloadVideo.src = `./public/beneficios/${videoSrc}`;
+              preloadVideo.preload = 'metadata';
+              preloadVideo.muted = true;
+            }
+          });
+        }
+
+        // Função para ativar um item específico
+        function activateItem(index) {
+          // Remove a classe ativa de todos os itens
+          beneficiosItems.forEach(item => {
+            item.classList.remove('beneficios-item-ativo');
+            item.classList.add('border-[#ddd]');
+            item.classList.remove('border-solid');
+          });
+
+          // Adiciona a classe ativa ao item atual
+          const currentItem = beneficiosItems[index];
+          currentItem.classList.add('beneficios-item-ativo');
+          currentItem.classList.remove('border-[#ddd]');
+          currentItem.classList.add('border-solid');
+
+          // Atualiza o vídeo com transição suave
+          const videoSrc = currentItem.getAttribute('data-video');
+          if (videoSrc) {
+            const newSrc = `./public/beneficios/${videoSrc}`;
+            if (!video.src.endsWith(videoSrc)) {
+              // Fade out do vídeo atual
+              video.classList.add('video-fade-out');
+              
+              setTimeout(() => {
+                // Troca o vídeo após fade out
+                video.src = newSrc;
+                video.load();
+                
+                // Função para fazer fade in
+                const doFadeIn = () => {
+                  video.classList.remove('video-fade-out');
+                  video.classList.add('video-fade-in');
+                };
+                
+                // Se o vídeo já tem dados suficientes, faz fade in imediatamente
+                if (video.readyState >= 2) {
+                  doFadeIn();
+                } else {
+                  // Senão, aguarda carregar
+                  video.addEventListener('loadeddata', function fadeInVideo() {
+                    doFadeIn();
+                    video.removeEventListener('loadeddata', fadeInVideo);
+                  }, { once: true });
+                }
+                
+              }, 200); // Tempo do fade out
+            }
+          }
+        }
+
+        // Função para ir para o próximo item
+        function nextItem() {
+          currentIndex = (currentIndex + 1) % beneficiosItems.length;
+          activateItem(currentIndex);
+        }
+
+        // Inicia a rotação automática
+        function startRotation() {
+          rotationInterval = setInterval(nextItem, 5000); // 5 segundos
+        }
+
+        // Para a rotação automática
+        function stopRotation() {
+          if (rotationInterval) {
+            clearInterval(rotationInterval);
+          }
+        }
+
+        // Adiciona eventos de hover para pausar/retomar a rotação
+        beneficiosList.addEventListener('mouseenter', stopRotation);
+        beneficiosList.addEventListener('mouseleave', startRotation);
+
+        // Adiciona eventos de clique nos itens
+        beneficiosItems.forEach((item, index) => {
+          item.addEventListener('click', () => {
+            currentIndex = index;
+            activateItem(currentIndex);
+            stopRotation();
+            // setTimeout(startRotation, 2000); // Retoma após 2 segundos
+          });
+        });
+
+        // Precarrega vídeos para transições mais suaves
+        preloadVideos();
+        
+        // Configura o vídeo inicial
+        video.classList.add('video-fade-in');
+        
+        // Inicia a rotação automática
+        startRotation();
+      });
+
       new Swiper(".swiper-wrapper-depoimento", {
         slidesPerView: 1,
         grabCursor: true,

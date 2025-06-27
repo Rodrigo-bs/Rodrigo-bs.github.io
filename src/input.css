@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+h1, h2, h3, h4 {
+  font-family: "Fahkwang", sans-serif !important;
+}
+
 span,
 a,
-p {
+p,
+li,
+button,
+summary,
+label {
+  font-family: "Ubuntu", sans-serif;
   color: #1d130e;
 }
 
@@ -31,7 +42,7 @@ p {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 @media (min-width: 1024px) {
@@ -69,6 +80,12 @@ p {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 16px 24px;
+  }
 }
 
 .button-item-hero {
@@ -142,7 +159,22 @@ p {
   color: #c16c3f;
 }
 
-.card-packages {
+.oferta {
+  border-color: linear-gradient(
+      90deg,
+      #b66243 0.01%,
+      #cd9073 140.2%,
+      #d7a78d 225.13%,
+      #deb69e 299.34%,
+      #e0bba4 348.82%,
+      #dfb8a2 370.26%,
+      #c79483 568.98%,
+      #ba7f71 692.67%
+    ),
+    #3b4249;
+}
+
+.oferta .card-packages {
   background: linear-gradient(
       90deg,
       #b66243 0.01%,
@@ -155,6 +187,12 @@ p {
       #ba7f71 692.67%
     ),
     #3b4249;
+  color: #fff;
+}
+
+.card-packages {
+  background: #fff7f2;
+  color: #000000;
 }
 
 .card-list-item {
@@ -176,5 +214,27 @@ p {
 
 .card-list-item span span {
   font-weight: 700;
-  color: #E17B4A;
+  color: #e17b4a;
+}
+
+.bg-beneficios-bento {
+  background: url("/public/flowers.png") no-repeat top center;
+  background-size: cover;
+}
+
+.swiper-pagination {
+  top: 10px !important;
+}
+
+.depoimento-pagination {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #da7b4a;
+  color: #e17b4a;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
 }

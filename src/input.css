@@ -22,6 +22,10 @@ label {
   color: #1d130e;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .bg-header {
   background: linear-gradient(
     90deg,

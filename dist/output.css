@@ -817,10 +817,6 @@ video {
   max-width: 350px;
 }
 
-.max-w-\[488px\]{
-  max-width: 488px;
-}
-
 .max-w-\[855px\]{
   max-width: 855px;
 }
@@ -1384,6 +1380,10 @@ label {
   color: #1d130e;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .bg-header {
   background: linear-gradient(
     90deg,
@@ -1515,7 +1515,7 @@ label {
 }
 
 .moca-w-hero {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .metric-item-hero {
@@ -1647,16 +1647,8 @@ label {
     height: 24rem;
   }
 
-  .max-lg\:h-56{
-    height: 14rem;
-  }
-
   .max-lg\:w-full{
     width: 100%;
-  }
-
-  .max-lg\:max-w-\[488px\]{
-    max-width: 488px;
   }
 
   .max-lg\:-translate-y-1\/2{
@@ -1806,11 +1798,6 @@ label {
     padding-bottom: 5rem;
   }
 
-  .md\:py-28{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1892,12 +1879,12 @@ label {
     min-height: 100vh;
   }
 
-  .lg\:max-w-xl{
-    max-width: 36rem;
-  }
-
   .lg\:max-w-\[488px\]{
     max-width: 488px;
+  }
+
+  .lg\:max-w-xl{
+    max-width: 36rem;
   }
 
   .lg\:grid-cols-2{
